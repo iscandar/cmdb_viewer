@@ -1,0 +1,129 @@
+ID CI,Hostname,Dipendenze,Componenti Dipendenti,Monitorato da,Applicativi Installati,Servizi Forniti,Flusso di Traffico In,Flusso di Traffico Out,Relazioni con Docker Swarm,Relazioni con Kubernetes,Politiche di Backup,Politiche di Sicurezza,Contatti di Supporto,SLA,Note
+dedf974f-752a-4300-a53f-8916d77d391f,vm-web-1,gateway-10,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+b260c317-51a5-4043-ab33-131e82ce6a07,vm-web-2,gateway-1,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+e710f388-f9e0-4b1d-ad21-d3a8b864d4fc,vm-web-3,gateway-6,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+d99ad608-6b09-4dd0-98e0-a629468c0f68,vm-web-4,gateway-9,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+841149e2-cfc8-47e7-b010-1dd4c1556e1b,vm-web-5,gateway-6,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+786beac4-ba20-462b-81d6-1b0dc6946e79,vm-web-6,gateway-6,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+0194c67a-e341-46de-979b-16b217930eb8,vm-web-7,gateway-7,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+69fb810f-307f-42f9-8981-b658f70a5b9a,vm-web-8,gateway-8,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+d3c4998c-4595-4e40-a144-91a4647471a3,vm-web-9,gateway-8,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+8942f35c-4826-482c-ac4c-336a9e34b903,vm-web-10,gateway-4,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+98577a9b-7911-493b-8df6-5f61aaad6b2b,vm-web-11,gateway-9,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+6bde589b-8410-4b23-bbfd-bd2f78cd5aef,vm-web-12,gateway-6,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+36f31238-d7c6-40dd-b219-6400484136a1,vm-web-13,gateway-10,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+262723c0-998f-48c4-ae45-ead2fcd592c5,vm-web-14,gateway-10,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+fdafc670-0007-4bcf-82f1-180567d77845,vm-web-15,gateway-3,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+38ccf925-ff5a-4f63-9215-2737e100a858,vm-web-16,gateway-3,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+a688048c-1ede-49cd-b199-a8bebaca9717,vm-web-17,gateway-10,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+b06a93ad-d8dd-4474-b967-708cc167a405,vm-web-18,gateway-4,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+bb3461e9-b7e3-4580-a067-0f18c4bf2b16,vm-web-19,gateway-1,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+c0e0bfc1-eb57-45c1-aba7-6adc2a6f4e41,vm-web-20,gateway-2,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+c0de35d4-0a14-4827-a608-716905f242f0,vm-web-21,gateway-1,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+2c4e705b-edc6-4f33-a859-ca3aa18d06a0,vm-web-22,gateway-3,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+fc79bf40-d048-47c1-830f-2fcf33ed2c89,vm-web-23,gateway-8,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+7885782f-6d42-4963-9d63-681e4fea1944,vm-web-24,gateway-7,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+ae6d60ff-0f15-4514-b463-dc359bf608fd,vm-web-25,gateway-6,N/A,monitor-01,N/A,Web Server,"HTTP, HTTPS","HTTP, HTTPS",N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+cd2674bf-3ae4-4657-85d6-eb62a872dc66,vm-kube-master-1,gateway-4,N/A,monitor-01,N/A,Kubernetes Master,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+cce25a39-2dd4-48ba-bc7e-9abe09293712,vm-kube-master-2,gateway-4,N/A,monitor-01,N/A,Kubernetes Master,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+9f015ca8-1121-4516-82e9-417efe473179,vm-kube-master-3,gateway-6,N/A,monitor-01,N/A,Kubernetes Master,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+b608579b-e15a-4e52-80ca-1760c3784aed,vm-kube-node-1,gateway-4,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+0a63db8b-791d-4528-a0f7-48b11d1f231a,vm-kube-node-2,gateway-6,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+8e700a38-bbc4-4b35-9d0b-718f1bb3dccd,vm-kube-node-3,gateway-4,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+38a8166a-5d52-442f-9bc0-4727b11f041c,vm-kube-node-4,gateway-9,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+723f0b2c-86fe-4c1b-87ce-ad37f7bee8c6,vm-kube-node-5,gateway-5,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+50233a4d-e6e9-4f90-8769-f456f3e801bd,vm-kube-node-6,gateway-3,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+a8818adf-af6e-44a6-975b-8ea1177689ff,vm-kube-node-7,gateway-4,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+8e3a7e77-b221-4163-ba58-9bfa12bd2d8f,vm-kube-node-8,gateway-2,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+a8e1dd83-5759-42c4-914b-015134fc01f4,vm-kube-node-9,gateway-3,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+5f766c90-4cee-4f21-82e9-9b744d96699f,vm-kube-node-10,gateway-6,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+faeeb21f-4c9b-439a-8499-3bc628c69b52,vm-kube-node-11,gateway-8,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+7c8714c6-befe-411e-8ad9-c0072658ce15,vm-kube-node-12,gateway-2,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+1a97f08c-69e4-4dc1-90ec-12fc0691db51,vm-kube-node-13,gateway-2,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+c3931475-0fc4-49d9-a974-394ba4901280,vm-kube-node-14,gateway-7,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+8f12ded4-d64e-49bd-a847-82260b0373c8,vm-kube-node-15,gateway-3,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+e364554a-944b-40c7-915d-25a8db7070a9,vm-kube-node-16,gateway-6,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+fe4e71d1-9635-423e-bf5c-f0880a68e8d7,vm-kube-node-17,gateway-2,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+933e4e5e-644f-44e7-a002-5f1309dfd578,vm-kube-node-18,gateway-1,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+e7ef16a5-f65b-47b7-bcf0-836396276c55,vm-kube-node-19,gateway-4,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+920c8032-8323-4eab-801d-2934f8f45ab6,vm-kube-node-20,gateway-8,N/A,monitor-01,N/A,Kubernetes Node,N/A,N/A,N/A,KubeCluster01,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+68544422-6f29-4267-9948-c04962e163e5,vm-docker-swarm-1,gateway-3,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+fa090fcb-5117-4038-a4aa-29c82888382e,vm-docker-swarm-2,gateway-1,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+05811789-be50-49ce-9fec-8594ea47570e,vm-docker-swarm-3,gateway-8,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+da482b88-c3f2-435f-b8f1-c03d93d42bf5,vm-docker-swarm-4,gateway-8,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+ae561717-9ce7-4ee1-9a6e-c0c517d8556a,vm-docker-swarm-5,gateway-2,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+7a730e61-2357-40d1-895d-e5689ed44d28,vm-docker-swarm-6,gateway-8,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team Docker,99.9% Uptime,Example KMDB entry
+feeb7251-7cf4-4646-8d62-a5d6c5d98c64,vm-docker-swarm-7,gateway-8,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+b4bbed1b-9f74-4d93-920c-47c52833f59e,vm-docker-swarm-8,gateway-6,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+1cf0ba2f-5383-4a91-89c7-7dcc29798498,vm-docker-swarm-9,gateway-5,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+4fc2972f-8b36-46d1-a5bf-8b88e9c7bb2d,vm-docker-swarm-10,gateway-1,N/A,monitor-01,N/A,Docker Swarm Node,N/A,N/A,SwarmCluster01,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+ab9b25c6-a3f7-4e4b-95e3-20bc78e8543c,vm-oracle-db-1,gateway-5,N/A,monitor-01,N/A,Oracle DB Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+b6706a38-f6f1-4d9b-bf1e-ef37bc238588,vm-oracle-db-2,gateway-10,N/A,monitor-01,N/A,Oracle DB Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+caeaf523-0665-450d-ac1f-cf0f95b3a256,vm-oracle-db-3,gateway-1,N/A,monitor-01,N/A,Oracle DB Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+1ae398e9-dace-4f40-aaff-2bb34676a6c2,vm-oracle-db-4,gateway-8,N/A,monitor-01,N/A,Oracle DB Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+c6a99dfa-2ded-441d-968e-a09805993fb2,vm-oracle-db-5,gateway-5,N/A,monitor-01,N/A,Oracle DB Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+bd05561e-fb51-4b70-8058-6c14bbd68e4b,vm-ml-1,gateway-9,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+4d71237a-c47b-468b-a74b-45ad3b38c54c,vm-ml-2,gateway-10,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+d7dbe704-6cc9-4e97-94f9-acfb80231e0d,vm-ml-3,gateway-2,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+fe61ac37-9d14-4479-bf11-9d779de1a03d,vm-ml-4,gateway-6,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+4dec3e49-a4c7-47a1-af43-936dc2775572,vm-ml-5,gateway-1,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+4ae04bdf-1a98-4886-ab49-105e6e3be869,vm-ml-6,gateway-1,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+ff7991fc-9549-4828-9de6-3a61a73ecd0e,vm-ml-7,gateway-10,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+ec3124da-63db-498d-ac4c-b1d453ce0468,vm-ml-8,gateway-7,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+78d45a8a-a737-4755-a35a-de392f829fda,vm-ml-9,gateway-10,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+a776d96e-7af4-4409-a62d-b6f39c271f5e,vm-ml-10,gateway-10,N/A,monitor-01,N/A,Machine Learning Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+e104ccfc-f37a-443b-b958-25e499363389,vm-dev-1,gateway-7,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+e36e034f-650d-4cc3-9563-19a23e81584c,vm-dev-2,gateway-5,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+a96f4d4c-a41f-4ff1-9bbd-6d5504ee313f,vm-dev-3,gateway-7,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+8d095b76-6e09-4109-8dbb-8b4323b977cc,vm-dev-4,gateway-7,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+3126be34-7c4c-4eb3-a2df-c76ace04c344,vm-dev-5,gateway-9,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+ae7d6982-a5a5-431c-a691-da38f63f39b5,vm-dev-6,gateway-3,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+85cc4d15-6098-4025-b86a-89329bca0fc2,vm-dev-7,gateway-2,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+6fc6a97d-2ff5-4b9c-9e10-070984ca62ff,vm-dev-8,gateway-8,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Docker,99.9% Uptime,Example KMDB entry
+ad596d6d-d962-4c6b-ad1a-367cea743338,vm-dev-9,gateway-2,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+ad164c96-74a9-4bd4-9854-b6aa1fb3e4fd,vm-dev-10,gateway-4,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+d2d73bf5-3243-4f08-9ac8-4b8809fc8374,vm-dev-11,gateway-5,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+3f19392d-000b-461a-a4e8-de853f91bae2,vm-dev-12,gateway-8,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+60d657d1-a9d4-40ba-998d-55f425a61710,vm-dev-13,gateway-10,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+a62a9bab-d981-4ee1-bc2d-d00b1b1b373b,vm-dev-14,gateway-4,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+b957ec33-9c99-49a2-9e8f-75c549177020,vm-dev-15,gateway-8,N/A,monitor-01,N/A,Development Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+713edf8e-c07f-4204-8ca3-6e036bb7ac92,vm-test-1,gateway-7,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+7dca3ffd-2891-407a-8e88-90b81fac4462,vm-test-2,gateway-8,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+09d2d663-843e-4206-bd81-c89047b57501,vm-test-3,gateway-1,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+a03d29d2-2ac4-4b75-9673-88b85d417771,vm-test-4,gateway-9,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+102e99e1-3854-4af5-9e42-5625b1dae9f9,vm-test-5,gateway-2,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+2f7ddbbd-2759-446d-8041-472cbf83fa04,vm-test-6,gateway-6,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+916984b8-ed50-4f13-b3c1-b07838a88d0d,vm-test-7,gateway-8,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+4ddff708-b783-423e-bf47-12d8ae73a85b,vm-test-8,gateway-10,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+b986b6fb-604e-48ee-a78b-b82a9d7ccbe7,vm-test-9,gateway-6,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+58d84260-82e4-4e44-a361-5744b923d272,vm-test-10,gateway-6,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+d3ab873d-405a-4701-aad1-d77bbb649e47,vm-test-11,gateway-7,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+467e425a-19d4-454a-91c2-02cbaa65e773,vm-test-12,gateway-10,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+4992dcf6-d726-4d2c-99d7-ecead3564669,vm-test-13,gateway-1,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+2cf2dfd1-c535-40a6-a9de-5827d630ccdc,vm-test-14,gateway-2,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Docker,99.9% Uptime,Example KMDB entry
+fc453dd4-1622-46be-b08b-11dd6d908feb,vm-test-15,gateway-2,N/A,monitor-01,N/A,Testing Machine,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+36ff61ec-1725-49cb-bb85-2140c6c53ac8,vm-monitor-1,gateway-9,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+ceaf08d6-c2d0-493d-9f64-6992f2071524,vm-monitor-2,gateway-9,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+b6240bf6-1e8a-4ef3-bb1f-6c752c5cf758,vm-monitor-3,gateway-5,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+7bb9caba-1f55-4674-aeda-3414f8be9e9e,vm-monitor-4,gateway-5,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+76411c1f-cc3c-4c0d-b444-5bd57930470e,vm-monitor-5,gateway-4,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+16591b86-02f4-4048-b556-69d8e7826a61,vm-monitor-6,gateway-4,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+e4761829-45cd-47f6-9e0d-98650d3c7ccf,vm-monitor-7,gateway-6,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+e980d402-606e-4ad5-b3e3-d723a3983d0c,vm-monitor-8,gateway-2,N/A,monitor-01,N/A,Monitoring Server,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+b93f2ac2-c792-480d-bb78-2e157daa513a,vm-gateway-1,gateway-6,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DevOps,99.9% Uptime,Example KMDB entry
+332026ca-1add-4ca2-913d-3157e0a98e42,vm-gateway-2,gateway-8,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+a98a5046-aae0-4889-9593-3a1d61be36c9,vm-gateway-3,gateway-4,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+ef1f09d7-e0ed-4968-966c-7038cd114fc6,vm-gateway-4,gateway-5,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+b8bd4eca-ffcf-44a3-b616-c93cda545ff9,vm-gateway-5,gateway-2,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team DB,99.9% Uptime,Example KMDB entry
+8636538f-abd8-4812-b50f-2ac8c87b41ba,vm-gateway-6,gateway-9,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+5fd84dbc-1038-4c66-919d-6b60f0ecaf97,vm-gateway-7,gateway-5,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
+119c5765-db74-46dd-ad0e-7bc71db5cba8,vm-gateway-8,gateway-9,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+fbad1e2e-32aa-4c4a-800a-26621249ea85,vm-gateway-9,gateway-3,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+fc42b357-9bcc-44b6-9508-1d5cb0e5c21c,vm-gateway-10,gateway-8,N/A,monitor-01,N/A,Gateway,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+9fa34c9e-d5d2-41be-b35d-d815fd3b25de,vm-independent-1,gateway-7,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+99334e0d-a9ad-440f-9c40-8dd1663c934d,vm-independent-2,gateway-5,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+f8b4e38f-a5d1-4cd9-a27a-33f71c65a3ec,vm-independent-3,gateway-9,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Web,99.9% Uptime,Example KMDB entry
+2fd3b839-a36b-4b3a-9c33-3c5d06db1856,vm-independent-4,gateway-9,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Infrastructure,99.9% Uptime,Example KMDB entry
+b8c30612-9abe-4939-9fc9-a8c77d9520c1,vm-independent-5,gateway-5,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team Kubernetes,99.9% Uptime,Example KMDB entry
+db91b590-53e8-4ab0-b083-848d4d72ea4d,vm-independent-6,gateway-6,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team QA,99.9% Uptime,Example KMDB entry
+b5df3001-dc10-4313-8f0d-fa3a83105823,vm-independent-7,gateway-9,N/A,monitor-01,N/A,Independent Service,N/A,N/A,N/A,N/A,Daily Backup,Standard Security Policy,Team ML,99.9% Uptime,Example KMDB entry
