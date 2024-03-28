@@ -1,146 +1,116 @@
-# Prima di generare i nuovi file CMDB e KMDB, definiamo alcune impostazioni base e dati di esempio.
-
 import csv
 import random
+from random import choice, randint, sample
+import numpy as np
 
-# Definizione dei dati base per la generazione del CMDB
-base_ip = ["10.0.0.", "10.0.1.", "192.168.1.", "172.16.0."]
-os_choices = ["Ubuntu 20.04", "CentOS 8", "Debian 10", "Windows Server 2019"]
-monitoring_tools = ["Prometheus", "Nagios", "CheckMK"]
-roles = ["web", "kube-master", "kube-node", "docker-swarm", "oracle-db", "ml", "dev", "test", "monitor", "gateway", "independent"]
-environments = ["Prod", "Dev", "Test"]
-hostname_prefix = "vm"
+# Tipologie di dispositivi
+tipi_dispositivi = ["Container", "VM", "Baremetal", "Firewall", "Gateway", "Monitor"]
 
-# Funzioni di supporto per la generazione dei dati
-def generate_ip(base_ip_list):
-    return random.choice(base_ip_list) + str(random.randint(1, 254))
+# Ruoli/Funzioni
+ruoli = [
+    "Kubernetes Node", "Docker Swarm Node", "Database Oracle", "Database MongoDB", 
+    "Queue Management", "Load Balancer", "Cache", "Firewall", "Gateway", "Monitoring System"
+]
 
-def generate_hostname(role, index):
-    return f"{hostname_prefix}-{role}-{index}"
+# Sistemi operativi
+sistemi_operativi = ["Ubuntu 20.04", "CentOS 8", "Debian 10", "Windows Server 2019"]
 
-def generate_monitoring_machine():
-    return random.choice(monitoring_tools)
+# Ambiente
+ambienti = ["Produzione", "Test", "Sviluppo"]
 
-def generate_url(role, index):
-    if role in ["web", "kube-master", "kube-node"]:
-        return f"http://www.{role}{index}.com:{random.choice([80, 8080, 443])}"
-    return "N/A"
+# Generazione degli hostname
+hostname_base = ["kube-node", "docker-node", "oracle-db", "mongo-db", "queue-mgr", "lb", "cache", "firewall", "gateway", "monitor"]
+hostnames = [f"{choice(hostname_base)}-{i}" for i in range(1, 201)]
 
-# Generazione del file CMDB
+# Creazione di URL
+url_base = ["internal.company", "service.local", "public-service.com"]
+urls = [f"http://{hostname}.{choice(url_base)}" for hostname in hostnames]
+
+# Assegnazione degli IP
+ip_base = ["192.168", "10.10", "172.16"]
+ips = [f"{choice(ip_base)}.{randint(1, 254)}.{randint(1, 254)}" for _ in range(200)]
+
+# CMDB
 cmdb_data = []
-for index, role in enumerate(roles * 10, start=1):  # Moltiplicazione per generare un numero sufficiente di VM
-    vm_data = {
-        "Hostname": generate_hostname(role, index),
-        "IP": generate_ip(base_ip),
-        "URL": generate_url(role, index),
-        "OS": random.choice(os_choices),
-        "Monitoraggio": generate_monitoring_machine(),
-        "Ambiente": random.choice(environments),
-        "Ruolo": role
+for i in range(200):
+    dispositivo = {
+        "Tipo": choice(tipi_dispositivi),
+        "Hostname": hostnames[i],
+        "IP": ips[i],
+        "URL": urls[i],
+        "CPU": f"{randint(1, 16)} cores",
+        "RAM": f"{randint(4, 128)} GB",
+        "VRAM": f"{randint(1, 16)} GB" if randint(1, 100) <= 20 else "N/A",  # 20% dei dispositivi hanno VRAM
+        "Hard Disk": f"{randint(128, 2048)} GB",
+        "Interfacce di Rete": f"eth0: {ips[i]}",
+        "OS": choice(sistemi_operativi),
+        "Macchina di Monitoraggio": f"monitor-{randint(1, 10)}",
+        "Macchina Gateway": f"gateway-{randint(1, 5)}",
+        "Ambiente": choice(ambienti),
+        "Ruolo/Funzione": choice(ruoli),
+        "Stato": "Active" if randint(0, 1) else "Maintenance",
     }
-    cmdb_data.append(vm_data)
+    cmdb_data.append(dispositivo)
 
-# Salvataggio del CMDB in CSV
-cmdb_file_path = "./new_cmdb.csv"
-with open(cmdb_file_path, mode='w', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=cmdb_data[0].keys())
-    writer.writeheader()
-    writer.writerows(cmdb_data)
+cmdb_df_new = pd.DataFrame(cmdb_data)
 
-# Generazione del file KMDB basato sul CMDB appena creato
+cmdb_df_new.head(), cmdb_df_new.shape
+
+# KMDB
+applicativi_possibili = ["Redis", "PostgreSQL", "Docker", "Apache", "Nginx", "Node.js", "RabbitMQ", "MySQL"]
+def genera_applicativi():
+    return ', '.join(sample(applicativi_possibili, randint(3, 7)))  # Tra 3 e 7 applicativi
+
+
+servizi_possibili = ["HTTPS", "SSH", "SMTP", "SFTP", "FTP", "SNMP"]
+def genera_servizi():
+    return ', '.join(sample(servizi_possibili, randint(2, 4)))  # Tra 2 e 4 servizi
+
+def genera_porte():
+    return ', '.join([str(randint(1024, 65535)) for _ in range(randint(2, 4))])  # Tra 2 e 4 porte
+
+protocolli_possibili = ["TCP", "UDP", "HTTPS", "SSH"]
+def genera_protocolli():
+    return ', '.join(sample(protocolli_possibili, randint(2, 4)))  # Tra 2 e 4 protocolli
+
+politiche_backup = [
+    "Offsite Backup", "Monthly Backup", "Real-time Replication", "Daily Backup", "Encrypted Backup", 
+    "Incremental Backup", "Differential Backup", "On-site Backup", "Cloud Backup", "Snapshot Backup"
+]
+
+politiche_sicurezza = [
+    "Multi-factor Authentication", "Regular Security Audits", "Restricted Access Policies", "Advanced Security Policy", 
+    "Data Encryption", "Network Segmentation", "Anti-virus and Anti-malware", "Firewall Policies", 
+    "Intrusion Detection Systems", "Regular Software Updates"
+]
+
+def genera_dipendenze():
+    return ', '.join(sample(hostnames, randint(1, 5)))  # Tra 1 e 5 hostnames come dipendenze
+
 kmdb_data = []
-for vm in cmdb_data:
-    dependencies = random.sample([vm["Hostname"] for vm in cmdb_data if vm["Hostname"] != vm["Hostname"]], k=random.randint(1, 3))
-    kmdb_data.append({
-        "Hostname": vm["Hostname"],
-        "Dipendenze": ";".join(dependencies),
-        "Monitoraggio": vm["Monitoraggio"],
-        "Ambiente": vm["Ambiente"],
-        "Ruolo": vm["Ruolo"],
-        "URL": vm["URL"]
-    })
-
-# Salvataggio del KMDB in CSV
-kmdb_file_path = "./new_kmdb.csv"
-with open(kmdb_file_path, mode='w', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=kmdb_data[0].keys())
-    writer.writeheader()
-    writer.writerows(kmdb_data)
-
-
-# Generazione dei nuovi file CMDB e KMDB con le specifiche dettagliate, escludendo le informazioni del CMDB dal KMDB.
-
-# Generazione del CMDB aggiornato con dettagli come CPU, RAM, Hard Disk e almeno 20 colonne.
-cmdb_data_updated = []
-for index in range(1, 201):  # Generazione di 200 entità tra VMs, server, router, firewall, e gateway.
-    entity_type = random.choice(["VM", "Server", "Router", "Firewall", "Gateway"])
-    cmdb_entry = {
-        "Hostname": f"{entity_type}-{index}",
-        "IP": generate_ip(base_ip),
-        "URL": generate_url(entity_type, index),
-        "CPU": f"{random.choice([2, 4, 8, 16])} vCPUs",
-        "RAM": f"{random.choice([8, 16, 32, 64])} GB",
-        "Hard Disk": f"{random.choice([256, 512, 1024])} GB SSD",
-        "OS": random.choice(os_choices),
-        "Monitoraggio": random.choice(["Prometheus", "Nagios", "CheckMK"]),
-        "Ambiente": random.choice(environments),
-        "Ruolo": random.choice(roles),
-        "ID CI": str(uuid.uuid4()),
-        # Aggiunta di ulteriori dettagli per raggiungere almeno 20 colonne
-        "Stato": random.choice(["Attivo", "Inattivo"]),
-        "Porta": random.choice([22, 80, 443]),
-        "Protocollo": random.choice(["HTTP", "HTTPS", "SSH"]),
-        "Funzione": random.choice(["Produzione", "Test", "Sviluppo"]),
-        "Localizzazione": random.choice(["Data Center 1", "Data Center 2"]),
-        "Priorità": random.choice(["Alta", "Media", "Bassa"]),
-        "Versione OS": random.choice(["Latest", "Stable", "Old"]),
-        "Backup": random.choice(["Sì", "No"]),
-        "Firewall": random.choice(["Sì", "No"]),
-        "Note": "Generato automaticamente"
+for hostname in hostnames:
+    dispositivo_kmdb = {
+        "Hostname": hostname,
+        "Dipendente": genera_dipendenze(),
+        "Dipendono": genera_dipendenze(),
+        "Sistema di Monitoraggio": f"{choice(hostnames)} - {choice(['Nagios', 'Prometheus'])}",
+        "Applicativi Installati": genera_applicativi(),
+        "Servizi Forniti": genera_servizi(),
+        "Porte di Comunicazione": genera_porte(),
+        "Protocolli per la Comunicazione": genera_protocolli(),
+        "Politiche di Backup": choice(politiche_backup),
+        "Politiche di Sicurezza": choice(politiche_sicurezza),
+        "Note": "Auto-generated entry for KMDB"
     }
-    cmdb_data_updated.append(cmdb_entry)
+    kmdb_data.append(dispositivo_kmdb)
 
-# Salvataggio del CMDB in CSV
-cmdb_file_path_updated = "/mnt/data/detailed_cmdb_updated.csv"
-with open(cmdb_file_path_updated, mode='w', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=cmdb_data_updated[0].keys())
-    writer.writeheader()
-    writer.writerows(cmdb_data_updated)
+kmdb_df_new = pd.DataFrame(kmdb_data)
 
+kmdb_df_new.head(), kmdb_df_new.shape
 
+# Salvataggio dei file CMDB e KMDB in formato CSV
+cmdb_file_path = './cmdb_updated.csv'
+kmdb_file_path = './kmdb_updated.csv'
 
-cmdb_file_path_updated
-
-# Correzione dell'errore e rigenerazione del file KMDB con le specifiche dettagliate.
-
-# Generazione di dati KMDB più accurata
-kmdb_data_detailed_corrected = []
-for vm in cmdb_data_updated:
-    dependencies = random.sample([other_vm["Hostname"] for other_vm in cmdb_data_updated if other_vm["Hostname"] != vm["Hostname"]], k=random.randint(1, 3))
-    kmdb_entry = {
-        "Hostname": vm["Hostname"],
-        "Dipendenze": ";".join(dependencies),
-        "Componenti Dipendenti": ";".join(random.sample([other_vm["Hostname"] for other_vm in cmdb_data_updated if other_vm["Hostname"] != vm["Hostname"]], k=random.randint(1, 2))),
-        "Monitorato da": random.choice(["Prometheus", "Nagios", "CheckMK"]),
-        "Applicativi Installati": random.choice(["Docker", "Kubernetes", "Apache", "Nginx"]),
-        "Servizi Forniti": vm["Ruolo"],
-        "Flusso di Traffico In": random.choice(["80", "443"]),
-        "Flusso di Traffico Out": random.choice(["80", "443"]),
-        "Relazioni con Docker Swarm": "Sì" if vm["Ruolo"] == "docker-swarm" else "No",
-        "Relazioni con Kubernetes": "Sì" if "kube" in vm["Ruolo"] else "No",
-        "Politiche di Backup": random.choice(["Giornaliero", "Settimanale", "Nessuno"]),
-        "Politiche di Sicurezza": "Standard",
-        "Contatti di Supporto": "supporto@" + vm["Ruolo"] + ".com",
-        "SLA": random.choice(["99%", "99.9%", "99.99%"]),
-        "Note": "KMDB generato per simulazione"
-    }
-    kmdb_data_detailed_corrected.append(kmdb_entry)
-
-# Salvataggio del KMDB corretto in CSV
-kmdb_file_path_detailed_corrected = "/mnt/data/detailed_kmdb_detailed_corrected.csv"
-with open(kmdb_file_path_detailed_corrected, mode='w', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=kmdb_data_detailed_corrected[0].keys())
-    writer.writeheader()
-    writer.writerows(kmdb_data_detailed_corrected)
-
-kmdb_file_path_detailed_corrected
+cmdb_df_new.to_csv(cmdb_file_path, index=False)
+kmdb_df_new.to_csv(kmdb_file_path, index=False)
